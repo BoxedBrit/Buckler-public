@@ -4,6 +4,10 @@ Public issue tracker and feedback repository for **Buckler**.
 
 This repository exists so users, testers, and server owners can report issues, suggest improvements, and give feedback for Buckler services without exposing the private source repositories.
 
+> [!IMPORTANT]
+> This is a public support and issue-tracking repository only.
+> The core Buckler source code is not hosted here.
+
 ## What can be reported here
 
 You can open issues for:
