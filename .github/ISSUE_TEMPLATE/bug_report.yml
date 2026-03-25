@@ -28,8 +28,6 @@ body:
         - Fabric
         - Paper
         - Forge
-        - Spigot
-        - Velocity
         - Other
     validations:
       required: false
