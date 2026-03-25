@@ -1,7 +1,8 @@
 name: Feature request
 description: Suggest an improvement or new feature for Buckler
 title: "[Feature]: "
-labels: ["feature request"]
+labels:
+  - feature request
 body:
   - type: dropdown
     id: service
@@ -22,7 +23,7 @@ body:
     id: platform_type
     attributes:
       label: Platform / Mod Type
-      description: Select the platform if this is a Game Mod / Plugin request
+      description: Only fill this in for Game Mod / Plugin requests
       options:
         - Fabric
         - Paper
@@ -32,9 +33,6 @@ body:
         - Other
     validations:
       required: false
-    visibleIf:
-      field: service
-      equals: Game Mod / Plugin
 
   - type: input
     id: summary
@@ -64,7 +62,7 @@ body:
     id: alternatives
     attributes:
       label: Alternatives considered
-      placeholder: Any other approaches you've considered
+      placeholder: Any other approaches or workarounds considered
 
   - type: textarea
     id: extra
