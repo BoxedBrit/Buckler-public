@@ -1,7 +1,8 @@
 name: Bug report
 description: Report a bug affecting Buckler services or integrations
 title: "[Bug]: "
-labels: ["bug"]
+labels:
+  - bug
 body:
   - type: dropdown
     id: service
@@ -22,7 +23,7 @@ body:
     id: platform_type
     attributes:
       label: Platform / Mod Type
-      description: Select the platform if this is a Game Mod / Plugin issue
+      description: Only fill this in for Game Mod / Plugin issues
       options:
         - Fabric
         - Paper
@@ -32,9 +33,6 @@ body:
         - Other
     validations:
       required: false
-    visibleIf:
-      field: service
-      equals: Game Mod / Plugin
 
   - type: input
     id: summary
@@ -105,7 +103,7 @@ body:
     id: browser
     attributes:
       label: Browser (if applicable)
-      placeholder: Example - Chrome 122 / Firefox 148
+      placeholder: Example - Firefox 148 / Chrome 122
 
   - type: input
     id: os
@@ -117,7 +115,7 @@ body:
     id: logs
     attributes:
       label: Logs, errors, screenshots
-      description: Paste logs or attach screenshots (remove sensitive info)
+      description: Paste logs or attach screenshots. Remove sensitive information first.
       placeholder: Paste logs or describe attachments here
 
   - type: checkboxes
